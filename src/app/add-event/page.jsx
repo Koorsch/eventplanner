@@ -25,8 +25,6 @@ export default async function AddEventPage() {
 
      let data = await response.json();
      const id = data[0].id;
-     console.log(id);
-     console.log(formData);
      redirect("/event/" + id)
 
   }

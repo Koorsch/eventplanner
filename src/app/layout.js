@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
       <nav className="flex gap-5 font-mono">
         <Link href="/">Home</Link>
         <Link href="/add-event">Add event</Link>
-        <Link href="/event">More stuff</Link>
       </nav>
-        
         {children}</body>
     </html>
   );

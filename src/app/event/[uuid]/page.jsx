@@ -1,5 +1,4 @@
 export default async function EventPage({ params }) {
-    console.log(params);
     const uuid = params.uuid;
 
     let headersList = {
@@ -13,8 +12,6 @@ export default async function EventPage({ params }) {
 
     let data = await response.json();
     const eventInfo = data[0];
-    console.log("Data: ", data)
-    console.log("Eventinfo: ", eventInfo)
     
     return (
       <article>
