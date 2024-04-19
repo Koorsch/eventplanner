@@ -24,7 +24,7 @@ export default async function AddEventPage() {
      });
 
      let data = await response.json();
-     const id = data[0].id;
+     const id = data[0];
      redirect("/event/" + id)
 
   }
